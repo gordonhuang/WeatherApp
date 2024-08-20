@@ -1,0 +1,1 @@
+-settings button to open up a menu to select unit for temperature, and to toggle scrolling animation

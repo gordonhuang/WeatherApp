@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-box">
+            <div class="search-box">
+                <img class="locate-img" onclick="locateUser()" title="Locate Me" src="images/location.svg">
+                <input class="search-bar" id="search-text" type="text" placeholder="Search (e.g., Scarborough, CA / 43.81, -79.30)">
+                <img class="search-img" onclick="searchLocation()" title="Search" src="images/search.svg">
+            </div>
+            <div class="location-box" style="margin-top: 15px;">
+                <div class="location-name">
+                    <h1 id = "location"></h1>
+                </div>
+            </div>
+            <div class="temperature-box">
+                <h1 id="temperature" class="fading-text" style="margin-bottom: -90px; margin-top: -30px;"></h1>
+                <img id="weather" src="images/placeholder.svg">
+                <h1 id="condition" style="margin-top: -30px;"></h1>
+            </div>
+            <div class="misc-container">
+                <div class="misc-category">
+                    <div class="misc-image-label"><img src="images/feels-like.svg">Feels Like</div>
+                    <h1 id="feels-like"></h1>
+                </div>
+                <div class="misc-category">
+                    <div class="misc-image-label"><img src="images/humidity.svg">Humidity</div>
+                    <h1 id="humidity"></h1>
+                </div>
+                <div class="misc-category">
+                    <div class="misc-image-label"><img src="images/wind.svg">Wind</div>
+                    <h1 id="wind"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
