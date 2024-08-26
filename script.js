@@ -151,7 +151,7 @@ function setWeatherPicture(element, weatherInfo, isDayTime) {
 // Sets page elements to null when user makes an invalid search
 function invalidSearch() {
     document.getElementById("location").classList.remove("scroll-animation");
-    document.getElementById("location").textContent = "N/A";
+    document.getElementById("location").textContent = "n/a";
     document.getElementById("temperature").textContent = ""
     document.getElementById("weather").src = "images/invalid.svg";
     document.getElementById("condition").textContent = "Oops! Location not found";

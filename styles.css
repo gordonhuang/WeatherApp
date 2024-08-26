@@ -21,8 +21,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0f072c;
-
+    background-color: #0f072c; 
 }
 
 .weather-box {
@@ -31,6 +30,15 @@ img {
     height: 625px;
     width: 450px;
     border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .weather-box {
+        position: absolute;
+        top: 7%;
+        height: 425px;
+        width: 324px;
+    }
 }
 
 .search-box {
@@ -84,6 +92,15 @@ input, .search-bar::placeholder {
     font-weight: 500;
 }
 
+@media (max-width: 1000px) {
+    .search-bar {
+        padding-left: 5px;
+    }
+    input, .search-bar::placeholder {
+        font-size: 10.5px;
+    }
+}
+
 .location-box {
     display: flex;
     justify-content: center;
@@ -105,6 +122,12 @@ input, .search-bar::placeholder {
     font-weight: 700;
     font-size: 60px;
     white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+    .location-name h1 {
+        font-size: 42px;
+    }
 }
 
 .scroll-animation {
@@ -132,6 +155,7 @@ input, .search-bar::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background: #333333;
     width: 100%;
     height: 350px;
@@ -144,6 +168,12 @@ input, .search-bar::placeholder {
 .temperature-box img {
     height: 250px;
     width: 250px;
+}
+
+@media (max-width: 1000px) {
+    .condition {
+        font-size: 30px;
+    }    
 }
 
 .fading-text {
@@ -173,14 +203,9 @@ input, .search-bar::placeholder {
     width: 32%;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
     background-color: #5c5c5c;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
-}
-
-.misc-category h1 {
-    font-weight: 400;
 }
 
 .misc-image-label {
@@ -191,4 +216,25 @@ input, .search-bar::placeholder {
     align-items: center;
     font-size: 18px;
     justify-content: center;
+}
+
+.misc-category h1 {
+    font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+    .misc-container img {
+        height: 30px;
+        width: 30px;
+    }  
+
+    .misc-image-label {
+        font-size: 13px;
+    }
+
+    .misc-category h1 {
+        font-size: 20px;
+        height: 100%;
+        word-wrap: break-word;
+    }
 }
